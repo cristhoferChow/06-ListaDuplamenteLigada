@@ -174,6 +174,7 @@ void excluirPrimeiroElemento()
 		NO* aux = primeiro;
 
 		primeiro = aux->prox;
+		primeiro->ant = NULL;
 		free(aux);
 		cout << "Item excluido" << endl;
 	}
